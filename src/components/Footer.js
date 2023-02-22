@@ -5,7 +5,8 @@ import chief from '../Assets/chef.jpg'
 export default function Footer() {
   return (
     <footer>
-        <div>
+       <div className='container'>
+       <div id='footer-pic'>
             <img src={chief} width="159px" height="289px"/>
         </div>
       <address>
@@ -29,7 +30,7 @@ export default function Footer() {
         </ul>
         </div>
         <div>
-            <p>Social media links</p>
+            <p>Social medias</p>
             <ul>
         <li><a href='#'>Meta</a></li>
         <li><a href='#'>Instagram</a></li>
@@ -37,6 +38,7 @@ export default function Footer() {
         </ul>
         </div>
       </address>
+       </div>
     </footer>
   )
 }

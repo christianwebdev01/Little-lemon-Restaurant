@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../Assets/logo.png'
 import '../App.css'
+import menu from '../Assets/menu.png'
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
         <li><a href='#'>Login</a></li>
         </ul>
     </nav>
-      <div className='heroSection'></div>
+      <div className='menu'><img src={menu} width='50px' height='50px' /></div>
     </header>
   )
 }

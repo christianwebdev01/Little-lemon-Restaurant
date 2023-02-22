@@ -3,6 +3,10 @@ a{
   font-weight: bold;
   text-decoration: none;
 }
+.menu{
+  display: none;
+  visibility: hidden;
+}
 li{
   list-style: none;
 }
@@ -14,4 +18,123 @@ address p {
 }
 address{
   font-style:normal;
+}
+
+/* Adding grid */
+#root{
+  padding: 0px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  
+}
+#root > header{
+  display: grid;
+  grid-template-columns:  1fr 2fr;
+}
+#root > header > nav > ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) repeat(3, 120px);
+}
+#root > header {
+  margin: 0 auto;
+}
+nav{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  
+}
+nav ul{
+  grid-row: 2;
+  padding: 0;
+  margin-left: 20px;
+}
+.logo img{
+  height: 80px;
+  box-sizing: border-box;
+  padding-left: 70px; 
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  margin: 0 auto;
+}
+.container address{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 10px;
+  
+}
+main{
+  height: 500px;
+}
+address ul{
+  padding-left:  1px;
+  
+}
+address a{
+  font-size: 20px;
+ 
+  color: #EDEFEE;
+}
+address div{
+  margin-left: 35px
+}
+
+.container{
+  width: 850px ;
+  color: #EDEFEE;
+}
+footer{
+  background: #495E57;
+}
+address ul{
+  line-height: 37px;
+}
+header a{
+  color: #333333;
+}
+
+@media (max-width: 764px) {
+  .container{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows:  1fr;
+    margin: 0 auto;
+    
+  }
+  footer{
+    height: 150vh;
+  }
+  .container address{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    margin-left: 10px;
+    
+  }
+  #footer-pic{
+    text-align: center;
+  }
+  #root > header > nav > ul{
+    display: none;
+  visibility: hidden;
+    
+  }
+  #root header{
+    grid-template-columns:  5fr 4fr 1fr;
+    margin-left: auto;
+    margin-right: 0px;
+    
+  }
+  .menu{
+    display: block;
+    visibility: visible;
+    text-align: end;
+    cursor: pointer;
+  }
+  
+}
+@media (max-width: 300px){
+  footer{
+    height: 220vh;
+  }
 }
