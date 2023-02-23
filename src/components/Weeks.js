@@ -4,6 +4,7 @@ import england from '../Assets/england.jpg'
 import ordering from '../Assets/ordering.png'
 import greek from '../Assets/greekSalad.jpg'
 import brusch from '../Assets/bruschetta.jpg'
+import { Link } from 'react-router-dom'
 
 export default function Weeks() {
   const [englandPrice, setEnglandPrice] = React.useState("12.99$")
@@ -12,8 +13,8 @@ export default function Weeks() {
   return (
       <section className='weekSpecials'>
         <div className='labels'>
-          <h1>Specials</h1>
-          <button className='btn-week'>Online menu</button>
+          <h1 className='week-title-main'>Specials</h1>
+          <button className='btn-week'><Link className='online-menu' to="/menu">Online menu</Link></button>
       </div>
           <div className='all-weekly'>
           <article className='weekly-special '>

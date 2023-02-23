@@ -40,6 +40,7 @@
     width: 389px;
     height: 354px;
     margin-top: 50px;
+    border: 2px solid black;
 }
 .hero-container{
     justify-content: center;
@@ -53,6 +54,7 @@
     margin-top: 80px;
     background: var(--primary-bg);
     cursor: pointer;
+    box-shadow: 8px 8px black;
     
 }
 a{
@@ -60,4 +62,13 @@ a{
 }
 .para{
     margin-bottom: 0px;
+}
+.reserve-link{
+    font-size: 24px;
+    font-weight: 300;
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    padding: 10px;
+    margin-left: -10px;
 }

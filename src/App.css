@@ -45,6 +45,7 @@ address{
 #root > header > nav > ul{
   display: grid;
   grid-template-columns: repeat(3, 100px) repeat(3, 120px);
+  text-align: center;
 }
 #root > header {
   margin-right: auto;
@@ -99,6 +100,7 @@ address div{
 footer{
   background: #495E57;
   height: 60vh;
+  margin-top: 300px;
 }
 address ul{
   line-height: 37px;
@@ -175,6 +177,9 @@ header a{
     grid-template-rows: auto !important;
     
   }
+ #root{
+  grid-template-rows: 80px 1.5fr 1fr;
+ }
   
 }
 @media (max-width: 300px){

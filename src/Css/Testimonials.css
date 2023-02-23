@@ -1,0 +1,27 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/* variables */
+:root{
+    --primary-bg: #F4CE14;
+    --secondary-bg: #495E57;
+    --white: #EDEFEE;
+    --black: #333333;
+    --card: #D9D9D9;
+}
+
+.testi-title{
+color: var(--primary-bg);
+font-family: 'Markazi Text', serif;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.section-bg{
+    background: var(--secondary-bg);
+    height: 500px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    text-align: center;
+}
