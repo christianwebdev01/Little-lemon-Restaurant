@@ -3,7 +3,8 @@ import logo from '../Assets/logo.png'
 import '../App.css'
 import menu from '../Assets/menu.png'
 import x from '../Assets/x.png'
-import HeroSection from './HeroSection'
+import { Routes, Route, Link} from "react-router-dom";
+
 
 export default function Header() {
   const [classes, setClasses] = React.useState("")
@@ -49,18 +50,37 @@ export default function Header() {
   return (
     <header>
       <div className='logo'><img src={logo} width="320px" height="80px"/></div>
+      
+      
       <nav className={theme}>
-        <ul className={classes}>
-        <li><a href='#'>Home</a></li>
-        <li><a href='#'>About</a></li>
-        <li><a href='#'>Menu</a></li>
-        <li><a href='#'>Reservations</a></li>
-        <li><a href='#'>Order Online</a></li>
-        <li><a href='#'>Login</a></li>
-        </ul>
-    </nav>
+      <ul className={classes}>
+      <li>
+        <Link to='/'>Home</Link>
+        </li>
+      {/* <li>
+        <Link to='/about'>About</Link>
+        </li> */}
+      <li>
+        <Link to='/menu'>Menu</Link>
+        </li>
+      <li>
+        <Link to='/Booking'>Reservations</Link>
+        </li>
+      {/* <li>
+        <Link to='/ordering'>Order Online</Link>
+        </li>
+      <li>
+        <Link to='/login'>Login</Link>
+        </li> */}
+      </ul>
+      </nav>
+      
+      
+  
+      
+  
       <div className='menu'>{classes === "" && <img  src={menu} width='50px' height='50px' alt='hamburguer-icon'  onClick={changeClass} />}{classes === "active" && <img id='xx-icon' className='x-icon' alt='closing-icon' src={x} width='50px' height='50px'  onClick={changeClass}  />}</div>
-      <HeroSection />
+      
     </header>
   )
   }

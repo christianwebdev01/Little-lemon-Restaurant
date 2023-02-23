@@ -1,0 +1,88 @@
+/* variables */
+:root{
+    --primary-bg: #F4CE14;
+    --secondary-bg: #495E57;
+    --white: #EDEFEE;
+    --black: #333333;
+    --card: #D9D9D9;
+}
+.weekSpecials{
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    justify-content: center;
+    
+  
+}
+.labels{
+    display: flex;
+    height: 100px;
+    margin-top: 30px;
+    gap: 400px;
+}
+.btn-week{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 234px;
+    height: 58px;
+    /* margin-top: 80px; */
+    background: var(--primary-bg);
+    margin-left: 55px;
+    cursor: pointer;
+}
+.all-weekly{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card-pic{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 250px;
+}
+.card-infos1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.price{
+    margin-left: 50%;
+}
+.card-title{
+    margin-left: 10%;
+}
+.card-para{
+    margin-left: 5%;
+    text-align: left;
+}
+.card-info2{
+    display: grid;
+}
+.card-order{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.card-add{
+    font-size: 24px;
+    font-weight:500;
+    margin-left: 10%;
+}
+.card-order-pic{
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.weekly-special{
+    background: var(--card);
+}
+.one{
+    margin-top: 30%;
+}
+.two{
+    margin-top: 13%;
+}
+.three{
+    margin-top: -3%;
+}

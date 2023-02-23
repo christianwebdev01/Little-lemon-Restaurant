@@ -7,6 +7,10 @@ a{
   display: grid;
     grid-template-rows: 1fr 1fr;
 }
+#root > header > div.logo{
+  margin-left: auto;
+}
+
 .menu{
   display: none;
   visibility: hidden;
@@ -28,19 +32,23 @@ address{
 #root{
   padding: 0px;
   display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  
+  grid-template-rows: 80px 3fr 1fr;
 }
 #root > header{
   display: grid;
-  grid-template-columns:  1fr 2fr;
+  grid-template-columns:  1fr 1fr;
 }
-#root > header > nav > ul{
+/* #root > header > nav > ul{
   display: grid;
   grid-template-columns: repeat(3, 1fr) repeat(3, 120px);
+} */
+#root > header > nav > ul{
+  display: grid;
+  grid-template-columns: repeat(3, 100px) repeat(3, 120px);
 }
 #root > header {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 nav{
   display: grid;
@@ -100,6 +108,7 @@ header a{
 }
 #root > header > nav.nav-black{
   background: #333333;
+  z-index: 2;
   
 }
 #root > header > nav.nav-white{
@@ -161,6 +170,10 @@ header a{
     visibility: visible;
     text-align: end;
     cursor: pointer;
+  }
+  nav{
+    grid-template-rows: auto !important;
+    
   }
   
 }

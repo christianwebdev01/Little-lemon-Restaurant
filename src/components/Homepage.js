@@ -1,14 +1,16 @@
 import React from 'react'
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import About from './About'
+import Testimonials from './Testimonials'
+import Weeks from './Weeks'
+import HeroSection from './HeroSection'
 
 export default function Homepage() {
   return (
     <>
-    <Header />
-    <Main />
-    <Footer />
+    <HeroSection />
+    <Weeks />
+      <Testimonials />
+      <About />
     </>
   )
 }
