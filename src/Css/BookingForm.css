@@ -1,0 +1,33 @@
+.warning{
+    color: red
+}
+.select{
+    width: 150px;
+    height: 30px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+.input{
+    margin-left: 5px;
+    width: 150px;
+    margin-bottom: 20px;
+    height: 25px;
+}
+label{
+    margin-left: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+sup{
+    color: red;
+    font-size: 1.3rem;
+}
