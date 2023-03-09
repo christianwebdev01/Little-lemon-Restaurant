@@ -13,7 +13,7 @@ export default function HeroSection() {
       <p className='para'>We are a family owned restaurant that comes<br/> from traditional ways of cooking with a<br/> modern twist.</p>
       <button  className='btn-res'><Link className='reserve-link' to='/Booking'>Reserve</Link></button>
       </div>
-      <div><img className='hero-img' src={outside} /></div>
+      <div><img className='hero-img' src={outside} alt='outside of the little lemon restaurant.'/></div>
       
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
 import '../Css/BookingForm.css'
 
 export default function BookingForm(props) {
@@ -29,9 +28,9 @@ export default function BookingForm(props) {
             <form onSubmit={handleSubmit}>
                 <h3 className='warning'>Available times can  vary on Weekends.</h3>
                 <label htmlFor='date' ><sup>*</sup>Choose a date: </label>
-                <input required className='input' onChange={props.handleChange} type='date' id='date' />
+                <input aria-label='inserting a date' required className='input' onChange={props.handleChange} type='date' id='date' />
                 <label htmlFor='dates'>Choose a time: </label>
-                <select className='select' aria-label='chooses the time for reservation' id='dates'>
+                <select aria-label='inserting time' className='select' aria-label='chooses the time for reservation' id='dates'>
                    {props.state.timesAvailable.length === 0 && <option>Choose date</option>}
                    {props.state.timesAvailable.map(item => {
                    return <option key={item}>{item}</option>
@@ -42,7 +41,7 @@ export default function BookingForm(props) {
                 <label htmlFor='guests'><sup>*</sup>Number of guests</label>
                 <input required className='input input-guests' onChange={changeNum} type='number' id='guests' min='1' max='10' placeholder='Max. 10'/>
                 <label htmlFor='occasion'>Occasion</label>
-                <select className='select' id='occasion'>
+                <select aria-label='inserting special occasion' className='select' id='occasion'>
                     <option>{occasions.option1}</option>
                     <option>{occasions.option2}</option>
                 </select>

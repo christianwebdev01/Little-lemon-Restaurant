@@ -3,14 +3,14 @@ import logo from '../Assets/logo.png'
 import '../App.css'
 import menu from '../Assets/menu.png'
 import x from '../Assets/x.png'
-import { Routes, Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 export default function Header() {
   const [classes, setClasses] = React.useState("")
   const [isVisible, setIsVisible] = React.useState("");
   const changeClass = () => {
-    if(classes == ""){
+    if(classes === ""){
       setClasses("active")
       setIsVisible(true)
     } else {
@@ -49,7 +49,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className='logo'><img src={logo} width="320px" height="80px"/></div>
+      <div className='logo'><img src={logo} width="320px" height="80px" alt='little lemon logo'/></div>
       
       
       <nav className={theme}>

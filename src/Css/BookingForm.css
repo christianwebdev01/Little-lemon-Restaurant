@@ -1,5 +1,17 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/* variables */
+:root{
+    --primary-bg: #F4CE14;
+    --secondary-bg: #495E57;
+    --white: #EDEFEE;
+    --black: #333333;
+    --card: #D9D9D9;
+}
+
 .warning{
-    color: red
+    color: var(--primary-bg)
 }
 .select{
     width: 150px;
@@ -15,6 +27,7 @@
 }
 label{
     margin-left: 5px;
+    color: var(--white);
 }
 form{
     display: flex;
@@ -23,11 +36,19 @@ form{
 button{
     width: 150px;
     height: 30px;
-    border-radius: 5px;
-    margin-top: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
     margin-left: 5px;
+    background: var(--primary-bg);
+    box-shadow: 8px 8px black;
+    cursor: pointer;
+    margin-bottom: 20px;
+
 }
 sup{
     color: red;
     font-size: 1.3rem;
+}
+fieldset{
+    background-color: var(--secondary-bg);
 }

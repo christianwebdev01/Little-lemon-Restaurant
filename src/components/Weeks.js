@@ -19,7 +19,7 @@ export default function Weeks() {
           <div className='all-weekly'>
           <article className='weekly-special '>
             <div>
-              <img className='card-pic' src={england} width='279px' height='160px'/>
+              <img className='card-pic' src={england} alt='england salad' width='279px' height='160px'/>
             </div>
 
             <div className='card-infos1'>
@@ -32,12 +32,12 @@ export default function Weeks() {
             </div>
             <div className='card-order one'>
               <h3 className='card-add'>Order online</h3>
-              <img className='card-order-pic ' src={ordering} />
+              <img className='card-order-pic ' src={ordering} alt='ordering icon' />
             </div>
           </article>
           <article className='weekly-special'>
             <div>
-              <img className='card-pic' src={greek} width='279px' height='160px'/>
+              <img className='card-pic' src={greek} alt='greek salad' width='279px' height='160px'/>
             </div>
 
             <div className='card-infos1'>
@@ -50,12 +50,12 @@ export default function Weeks() {
             </div>
             <div className='card-order  two'>
               <h3 className='card-add'>Order online</h3>
-              <img className='card-order-pic' src={ordering} />
+              <img className='card-order-pic' src={ordering} alt='ordering icon'/>
             </div>
           </article>
           <article className='weekly-special'>
             <div>
-              <img className='card-pic' src={brusch} width='279px' height='160px'/>
+              <img className='card-pic' src={brusch} alt='bruchetta' width='279px' height='160px'/>
             </div>
 
             <div className='card-infos1'>
@@ -68,7 +68,7 @@ export default function Weeks() {
             </div>
             <div className='card-order three'>
               <h3 className='card-add'>Order online</h3>
-              <img className='card-order-pic ' src={ordering} />
+              <img className='card-order-pic ' src={ordering} alt='ordering icon' />
             </div>
           </article>
           

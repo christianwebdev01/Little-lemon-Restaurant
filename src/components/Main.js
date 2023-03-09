@@ -10,7 +10,7 @@ import ConfirmationBooking from './ConfirmationBooking'
 export default function Main(props) {
   return (
     
-      <main>
+      <main id="top">
       <Routes>
       <Route path="/" element={<Homepage />} />
         <Route path='/menu' element={<Menu/>}/>

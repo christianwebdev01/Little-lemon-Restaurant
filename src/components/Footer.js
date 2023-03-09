@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../App.css'
 import chief from '../Assets/chef.jpg'
 
@@ -13,12 +14,9 @@ export default function Footer() {
         <div>
             <p>Navigations</p>
             <ul>
-        <li><a href='#'>Home</a></li>
-        <li><a href='#'>About</a></li>
-        <li><a href='#'>Menu</a></li>
-        <li><a href='#'>Reservations</a></li>
-        <li><a href='#'>Order Online</a></li>
-        <li><a href='#'>Login</a></li>
+        <li><a href='#top'>Home</a></li>
+        <li><a href='#aboutUs'>About</a></li>
+        <li><Link to="/Booking">Reservations</Link></li>
         </ul>
         </div>
         <div>

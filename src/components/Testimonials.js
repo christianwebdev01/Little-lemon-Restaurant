@@ -4,6 +4,7 @@ import '../Css/Testimonials.css'
 export default function Testimonials() {
   return (
     <section className='section-bg'>
+      <h2 id='rateUs'>Be the first one to rate us!</h2>
        <div>
         <h1 className='testi-title'>Testimonials</h1>
        </div>

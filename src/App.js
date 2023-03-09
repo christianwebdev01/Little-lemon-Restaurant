@@ -59,8 +59,8 @@ const reducer = (state, action) =>{
    <Router>
       <Header />
       <Main handleChange={handleChange} state={state} />
-   </Router>
       <Footer />
+   </Router>
     </>
   );
 }

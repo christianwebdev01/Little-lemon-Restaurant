@@ -5,7 +5,7 @@ import chiefs from '../Assets/marioAdrien.jpg'
 
 export default function About() {
   return (
-    <div className='about-us-container'>
+    <div id='aboutUs' className='about-us-container'>
       <div className='info'>
         <h1 className='about-me-title'>Little Lemon</h1>
         <h2 className='about-me-sub'>Chicago</h2>
